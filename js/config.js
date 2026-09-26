@@ -16,9 +16,19 @@ window.SITE = {
   // Footer credit
   builtBy: "Muzzammil",
 
-  // Branches (TODO: add real addresses and Google Maps links)
+  // Branches: name, area, address, phone, Google Maps link, and map search text
   branches: [
-    { name: "Branch 01", city: "City to be announced", address: "Full address coming soon", phone: "", maps: "" },
-    { name: "Branch 02", city: "City to be announced", address: "Full address coming soon", phone: "", maps: "" }
+    {
+      name: "Bombay Coldrinks", city: "Gandhibagh, Nagpur",
+      address: "Pardhi Bhavan, Ganjakhet Road, Ganjakhet Chowk, Gandhibagh, Nagpur, Maharashtra 440002",
+      phone: "+91 94221 27785", maps: "https://share.google/HVM0j5BmaQzrwC7cM",
+      mapQuery: "Bombay Coldrinks @21.1543259,79.1043464"
+    },
+    {
+      name: "New Bombay Cold-Drinks", city: "Shanti Nagar, Nagpur",
+      address: "Beside SBI Bank, Universal Chowk, Shantinagar Colony, Nagpur, Maharashtra 440002",
+      phone: "+91 88050 76224", maps: "https://share.google/jwCDTt7TkXeQTG7xr",
+      mapQuery: "New Bombay Cold Drinks, Universal Chowk, Shantinagar Colony, Nagpur 440002"
+    }
   ]
 };

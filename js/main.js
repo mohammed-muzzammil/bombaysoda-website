@@ -851,7 +851,15 @@
       var dir = $("[data-b=maps]", card), call = $("[data-b=phone]", card);
       if (b.maps) { dir.href = b.maps; dir.removeAttribute("aria-disabled"); dir.target = "_blank"; dir.rel = "noopener"; }
       if (b.phone) { call.href = "tel:" + b.phone.replace(/\s/g, ""); call.removeAttribute("aria-disabled"); }
-      var badge = $(".badge", card); if (badge && b.maps) badge.textContent = "Open";
+      var badge = $(".badge", card); if (badge && b.maps) badge.textContent = "Nagpur";
+      if (b.phone) { var ph = $("[data-b=phonetext]", card); if (ph) ph.textContent = b.phone; }
+      var map = $(".branch__map", card);
+      if (map && b.mapQuery) {
+        var fr = document.createElement("iframe");
+        fr.src = "https://maps.google.com/maps?q=" + encodeURIComponent(b.mapQuery) + "&z=16&output=embed";
+        fr.loading = "lazy"; fr.title = "Map of " + b.name; fr.referrerPolicy = "no-referrer-when-downgrade";
+        map.appendChild(fr); map.classList.add("has-map");
+      }
     });
     return isPlaceholder;
   }

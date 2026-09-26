@@ -57,7 +57,6 @@ The site shows `customercare@bombaysoda.co.in`. To actually receive mail there f
 ## Placeholders to replace
 
 - [ ] Make sure customercare@bombaysoda.co.in receives mail (forwarding, above)
-- [ ] Two branch cities and addresses, plus Google Maps links (`js/config.js`)
 - [ ] Flavour descriptions were written from the old BCD site. Check the wording (`FLAVOURS` in `js/main.js`)
 - [ ] B-Spring purification steps (RO, UV, ozonation) and pack sizes (1 L, 2 L): confirm they match the real product (`b-spring/index.html`)
 - [ ] Family quote on the home page (`index.html`, "Our story")

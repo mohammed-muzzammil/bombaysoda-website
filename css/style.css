@@ -382,6 +382,12 @@ p { margin: 0; }
 .branch__no { font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green-700); }
 .badge { padding: 5px 11px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--cream); color: var(--muted); box-shadow: inset 0 0 0 1px var(--line); }
 .branch h3 { font-size: 1.45rem; }
+.branch__map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 2; }
+.branch__map.has-map .pin { display: none; }
+.branch__phone { color: var(--muted); font-size: 15px; }
+.branch__phone strong { color: var(--ink); }
+.branches__more { display: flex; align-items: center; gap: 12px; margin-top: 26px; font-weight: 700; color: var(--green-700); }
+.branches__more span { width: 10px; height: 10px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 4px var(--lime-soft); animation: pulse 2s ease-in-out infinite; }
 .branch address { font-style: normal; color: var(--muted); }
 .branch__actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .branch__actions .btn { padding: 11px 18px; font-size: 14px; }
